@@ -8,14 +8,24 @@ const copyNums = [...nums];
 
 const doubleEvenNums = copyNums.forEach((element, index) => {
     if (element % 2 == 0) {
-        console.log(element * 2);
-        //return copyNums[index] = element * 2;
-    } else {
-        console.log(element);
+        copyNums[index] = element * 2;
     }
 });
 
-//console.log(copyNums);
+console.log(copyNums);
+
+
+// Places values in new array we made called doubleArr
+const doubleEvenNums2 = copyNums.forEach((element, index) => {
+     doubleArr = [];
+     if (element % 2 == 0) {
+         doubleArr[index] = element * 2[index];
+     } 
+     return doubleArr;
+    }
+ );
+
+ console.log(copyNums)
 
 
 
